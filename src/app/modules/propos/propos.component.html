@@ -1,0 +1,77 @@
+<div class="page-container">
+
+  <div class="a-propos">
+    <div class="section1">
+      <img src="/assets/template 2Asset 3mdpi.png">
+      <h2 class="fly-in">VOTRE PARTENAIRE DE CONFIANCE SUR MESURE</h2>
+      <h1 class="fly-in">LA RÉVOLUTION DES SERVICES D'ENTREPRISE EN FRANCE</h1>
+      <p>DE NOS JOURS, LE MONDE DES AFFAIRES EST EN CONSTANTE ÉVOLUTION, ET LA GESTION EFFICACE D'UNE ENTREPRISE EST CRUCIALE POUR SON SUCCÈS. C'EST LÀ QU'INTERVIENT LG GROUPE, UNE SOCIÉTÉ DE SERVICES CRÉÉE EN 2016, DONT LA MISSION PRINCIPALE EST</p>
+      <p>“ OPTIMISER LES OPÉRATIONS QUOTIDIENNES DES ENTREPRISES ".</p>
+      <p>DÉCOUVREZ COMMENT NOTRE ÉQUIPE DE PROFESSIONNELS QUALIFIÉS ET EXPÉRIMENTÉS PEUT TRANSFORMER VOTRE ENTREPRISE ET VOUS PERMETTRE DE PROSPÉRER.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="carreau" *ngFor="let carreau of carreauxData">
+      <h1>{{ carreau.titre }}</h1>
+      <p>
+        <span class="numero">{{ carreau.numero }}</span>
+        {{ carreau.descriptionCourte }}
+        <span *ngIf="carreau.showMore">{{ carreau.descriptionComplete }}</span>
+      </p>
+      <button (click)="toggleDescription(carreau)">
+        {{ carreau.showMore ? 'Lire moins' : 'Lire plus' }}
+      </button>
+    </div>
+  </div>
+  
+    <div class="propos">
+      <h2 class="bounce">NOTRE MISSION</h2>
+      <div class="propos-text">
+        <p>CHEZ<strong> LG GROUPE</strong> CHEZ LG GROUPE , NOTRE MISSION PRINCIPALE CONSISTE À "OPTIMISER LES OPÉRATIONS QUOTIDIENNES
+          DES ENTREPRISES". DEPUIS NOTRE FONDATION EN 2016, NOUS NOUS ENGAGEONS À OFFRIR DES SERVICES DE
+          GESTION D'ENTREPRISE DE LA PLUS HAUTE QUALITÉ AFIN D'ACCOMPAGNER NOS CLIENTS VERS LA RÉUSSITE.
+          NOUS PRÔNONS UNE APPROCHE GLOBALE DE LA GESTION D'ENTREPRISE, OÙ CHAQUE ÉLÉMENT EST ÉTROITEMENT LIÉ. NOTRE ÉQUIPE DE PROFESSIONNELS QUALIFIÉS ET EXPÉRIMENTÉS S'EMPLOIE À ALLÉGER LA
+          CHARGE ADMINISTRATIVE, À GARANTIR UNE COMPTABILITÉ PRÉCISE ET À FAVORISER LA CRÉATION D'ENVIRONNEMENTS DE TRAVAIL POSITIFS.
+          NOTRE OBJECTIF EST DE TRANSFORMER LES ENTREPRISES EN OPTIMISANT LEURS OPÉRATIONS, EN ÉCONOMISANT DU TEMPS ET DE L'ARGENT, ET EN LES AIDANT À ATTEINDRE DE NOUVEAUX SOMMETS DE RÉUSSITE. NOUS</p>
+     <div class="propos-image">
+      <img src="/assets/img site-06.png"alt="Image de la société">
+    </div>
+  </div>
+    </div>
+
+    <div id="menu" class="menu">
+      <h2 class="titre-texte">NOS VALEURS</h2>
+      <div class="contenu">
+        <div class="box">
+          <div class="imbox">
+            <img src="/assets/template 7Asset 7mdpi.png" alt="Image 1">
+            <div class="text-content">
+              <h3>Excellence</h3>
+              <p>Nous visons l'excellence dans tout ce que nous faisons, de la prestation de services à la relation client. Nous nous efforçons constamment d'atteindre les normes les plus élevées et de dépasser les attentes de nos clients.</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imbox">
+            <img src="/assets/template 7Asset 8mdpi.png" alt="Image 2">
+            <div class="text-content">
+              <h3>Collaboration</h3>
+              <p>Nous croyons en la puissance de la collaboration. En travaillant étroitement avec nos clients pour comprendre leurs besoins spécifiques et concevoir des solutions sur mesure, nous favorisons également une culture d'échange au sein de notre équipe.</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imbox">
+            <img src="/assets/template 7Asset 9mdpi.png" alt="Image 3">
+            <div class="text-content">
+              <h3>Responsabilité</h3>
+              <p>Nous sommes responsables de nos actions et de nos engagements envers nos clients. Nous tenons nos promesses et nous nous efforçons de contribuer de manière positive à nos communautés.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <app-containercontact></app-containercontact>
+
+    </div>

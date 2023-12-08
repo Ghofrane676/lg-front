@@ -1,0 +1,12 @@
+{
+    "/": {
+      "target": "http://localhost:4200",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "headers": {
+        "Host": "https://63a9-197-16-191-100.ngrok-free.app "
+      }
+    }
+  }
+  

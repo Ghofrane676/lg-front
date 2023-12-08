@@ -1,0 +1,164 @@
+<div [formGroup]="form" class="formbold-main-wrapper">
+  <h1>CONTACTEZ-NOUS</h1>
+  <br>
+  <br>
+  <img src="/assets/template 3Asset 14mdpi.png" alt="template 7Asset 10mdpi.png">
+  <div class="formbold-form-wrapper">
+    <form [formGroup]="form" action="javascript:void(0)" (submit)="send()">
+      <div class="formbold-row">
+        <div style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+        <div class="formbold-col">
+          <div class="formbold-mb-5">
+            <label for="nom" class="formbold-form-label"></label>
+            <input
+              formControlName="nom"
+              type="text"
+              id="firstName"
+              name="nom"
+              placeholder="NOM *"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+        <div class="formbold-col">
+          <div class="formbold-mb-5">
+            <label for="prenom" class="formbold-form-label"></label>
+            <input
+              formControlName="prenom"
+              type="text"
+              id="prenom"
+              name="prenom"
+              placeholder="PRÉNOM *"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+        <div class="formbold-col">
+          <div class="formbold-mb-5">
+            <label for="email" class="formbold-form-label"></label>
+            <input
+              formControlName="email"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="ADRESSE E-MAIL *"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+        </div>
+
+        <div style="display: flex;flex-direction: row;justify-content: space-between;">
+        <div class="formbold-col">
+          <div class="formbold-mb-5">
+            <label for="telephone" class="formbold-form-label"></label>
+            <input
+              formControlName="telephone"
+              type="text"
+              id="telephone"
+              name="telephone"
+              placeholder="N° DE TÉLÉPHONE *"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+
+
+
+
+        <div class="formbold-col">
+          <div class="formbold-mb-5">
+            <label for="nomEntreprise" class="formbold-form-label"></label>
+            <input
+              formControlName="nomEntreprise"
+              type="text"
+              id="nomEntreprise"
+              name="nomEntreprise"
+              placeholder="NOM DE L'ENTREPRISE *"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+
+
+
+        <div class="formbold-col">
+          <div class="formbold-mb-5">
+            <label for="fonction" class="formbold-form-label"></label>
+            <input
+              formControlName="telephone"
+              type="text"
+              id="fonction"
+              name="fonction"
+              placeholder="FONCTION *"
+              class="formbold-form-input"
+            />
+          </div>
+        </div>
+      </div>
+
+      </div>
+      <div style="display: flex;flex-direction: row;justify-content: space-between;">
+      <div class="formbold-row">
+        <div class="formbold-col">
+          <div class="formbold-mb-5">
+            <label for="objet" class="formbold-form-label">
+              
+            </label>
+            <select
+              formControlName="objet"
+              id="objet"
+              name="objet"
+              placeholder="OBJET"
+              class="formbold-form-input"
+              [(ngModel)]="sujetSelectionne"
+            >
+              <option value="" disabled selected></option>
+              <option value="option2">Mise à disposition d'équipe dédiée</option>
+              <option value="option3">Support aux entreprises</option>
+              <option value="option4">Autre</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="formbold-col">
+          <div class="formbold-mb-5">
+            <label for="message" class="formbold-form-label"></label>
+            <textarea
+            formControlName="message"
+            id="message"
+            name="message"
+            placeholder="MESSAGE :"
+            class="formbold-form-input formbold-textarea"
+          ></textarea>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <button type="submit" class="formbold-btn">Envoyer</button>
+    </form>
+  </div>
+
+</div>
+<div class="container">
+  <div class="content-column">
+    <img src="/assets/template 2Asset 3mdpi.png" alt="template 7Asset 10mdpi.png">
+    <h3 class="intro-text">VOTRE PARTENAIRE DE CONFIANCE POUR LA GESTION D'ENTREPRISE</h3>
+  </div>
+  <div class="services-container">
+    <h2>NOS SERVICES</h2>
+    <p>TENUE DE COMPTABILITÉ</p>
+    <p>SUPPORT ADMINISTRATIF</p>
+    <p>GESTION DES RESSOURCES HUMAINES</p>
+  </div>
+  <img class="Image" src="/assets/template 1 Asset 54mdpi.png" alt="template 7Asset 10mdpi.png">
+  <div class="contact-information">
+    <h2>CONTACT</h2>
+
+    <p> +2016 00 000 000</p>
+    <p> +2016 00 000 000</p>
+    <p> CONTACT@LGGROUP.TN</p>
+    <p> ADRESSE</p>
+  </div>
+</div>

@@ -1,0 +1,166 @@
+/* reference.component.scss */
+@media only screen and (min-width: 1200px){
+.references-background {
+    background-color: #ebe7e7;
+    text-align: center;
+    padding: 50px;
+    height: 300px;
+    margin: 50px;
+    position: relative;
+
+    h2 {
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    img{
+      width: 200px;
+    }
+  }
+  
+  .references-container {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 20px;
+  
+    .references-scroll {
+      display: flex;
+      animation: scroll 10s linear ; 
+    }
+  
+    .reference-logo {
+      padding: 50px;
+      display: inline-block;
+      img{
+        width: 150px;
+        height: 100px;
+        margin: 20px;
+      }
+    }
+  }
+  
+  .scroll-left,
+  .scroll-right {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .scroll-left {
+    margin-right: 20px;
+    img{
+      width: 20px;
+    }
+  }
+  .scroll-right {
+    margin-right: 10px;
+    img{
+      width: 20px;
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+    li {
+      width: 10px;
+      height: 10px;
+      background-color: #999;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+  
+    li.active {
+      background-color: #333;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .references-background {
+    padding: 20px;
+    margin: 0;
+    height: auto; /* Ajustez la hauteur automatiquement pour les petits écrans */
+  
+    h2 {
+      font-size: 1.2rem; /* Ajustez la taille de la police pour les petits écrans */
+      position: static; /* Réinitialisez la position */
+    }
+  
+    img {
+      width: 180px; /* Ajustez la taille de l'image pour les petits écrans */
+    }
+  }
+  
+  .references-container {
+    overflow: auto; /* Ajoutez une barre de défilement horizontale si nécessaire */
+    white-space: nowrap;
+    display: flex;
+    justify-content: center; /* Aligner horizontalement les éléments */
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  .references-scroll {
+    animation: none; /* Désactivez l'animation de défilement pour les petits écrans */
+  }
+  
+  .reference-logo {
+    padding: 10px; /* Ajustez la marge intérieure pour les petits écrans */
+    display: inline-block; /* Affichez les logos horizontalement */
+  
+    img {
+      width: 50px; /* Ajustez la taille des logos pour les petits écrans */
+      height: auto; /* Ajustez la hauteur automatiquement pour les petits écrans */
+      margin: 10px 5px; /* Ajustez la marge entre les logos pour les petits écrans */
+    }
+  }
+  
+  .scroll-left,
+  .scroll-right {
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 0; /* Ajustez la marge entre les boutons pour les petits écrans */
+  }
+  
+  .scroll-left img,
+  .scroll-right img {
+    display: none; /* Masquez les icônes pour les boutons de défilement */
+  }
+  
+  .pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+    li {
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+  
+    li.active {
+      background-color:transparent;
+    }
+  }
+}

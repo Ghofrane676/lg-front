@@ -1,0 +1,66 @@
+<div style="display: flex; flex-direction: column;">
+  <div id="nav1" style="background-color: black; height: 30px; display: flex; flex-direction: row; justify-content: space-between;  align-content: center;">
+    <div class="follow-us" style="display: flex; flex-direction: row;">
+      <h6 style="text-align: left; color: white; margin-left: 10px;"><b>FOLLOW US</b></h6>
+      
+      <a href="lien_linkedin" fxFlex="0 0 auto">
+         <img style="width: 10px;" src="/assets/icn.png" alt="Linkedin">
+      </a>
+     </div>
+     <div class="search-box" style="margin-right: 20px;">
+      <mat-form-field style="width: 200px; height: 50px;">
+        <mat-label >Search</mat-label>
+        <input matInput placeholder="Search..." [(ngModel)]="searchTerm" (input)="onSearch()">
+      </mat-form-field>
+    </div>
+  </div>
+<div id="nav2" class="nav" [ngClass]="{'scrolled': isScrolled}">
+  <div class="navbar">
+
+   
+<!--
+    <div class="follow-us">
+      <h3>FOLLOW US</h3>
+        <a href="lien_linkedin"><img src="/assets/linkedin.png" alt="Linkedin"></a>
+    </div>
+-->
+
+    <div style="margin-left: 70px;" class="logo">
+      <img src="/assets/logo color.png" alt="Nom de votre entreprise">
+    </div>
+    <ul style="font-weight: bold;">
+      <li><a routerLink="/acceuil">ACCEUIL</a></li>
+      <li><a routerLink="/a-propos">À PROPOS</a></li>
+        <li><a (click)="toggleServicesDropdown()">SERVICES</a>
+        <ul class="services-dropdown" *ngIf="servicesDropdownOpen">
+          <li><a routerLink="/equipe">MISE À DISPOSITION D'ÉQUIPE DÉDIÉE</a></li>
+          <li><a routerLink="/support">SUPPORT AUX ENTREPRISES</a></li>
+          
+        </ul>
+      </li>
+    
+
+
+
+      <!--
+<li>
+        <a (click)="toggleMADDropdown()" routerLink="/mise-a-disposition">MISE À DISPOSITION <i class="fas fa-angle-down"></i></a>
+        <ul class="mad-dropdown" *ngIf="madDropdownOpen">
+          <li><a routerLink="/mise-a-disposition">COMPTABILITÉ</a></li>
+          <li><a routerLink="/mise-a-disposition">INGÉNIERIE</a></li>
+        </ul>
+      </li>
+      <li><a routerLink="/blog">BLOG</a></li>
+      -->
+      
+      
+      <li><a routerLink="/contact">CONTACT</a></li>
+    </ul>
+    <div></div>
+  
+
+  </div>
+    
+</div>
+</div>
+

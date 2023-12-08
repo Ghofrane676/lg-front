@@ -1,0 +1,148 @@
+@media only screen and (min-width: 1200px){
+.nos-chiffres-cles {
+  background-image:url('/assets/template 1 Asset 31mdpi.png');
+  text-align: center;
+  color: white;
+  padding: 50px;
+  width: 1420px;
+  margin: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+img{
+  width: 300px;
+}
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .chiffre {
+    display: flex;
+    justify-content: space-around; // Ajustez cet espace selon vos besoins
+    align-items: center;
+    margin-top: 20px;
+
+    .chiffre-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+margin-left: 150px;
+margin-right: 100px;
+
+.chiffre-content {
+  display: flex;
+  margin-bottom:10px;
+  align-items: center;
+  font-size: 18px; 
+      img{
+        width: 50px;
+        margin:10px;
+        margin-top:20px;
+      }
+
+      strong {
+        font-size: 80px;
+        font-weight: bold;
+        display: block;
+        margin-top: 20px;
+        + .description {
+          margin-top: 45px; // Ajustez la marge comme nécessaire
+        }
+      }
+      .description {
+        font-size: 14px;
+        width: 10%;
+        color:white; 
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+      .chiffre-description {
+        margin-bottom: 20px;
+        font-size: 14px;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .nos-chiffres-cles {
+    background-color: darkslategrey; /* Supprimez l'image d'arrière-plan pour les petits écrans */
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: auto; /* Ajustez la largeur automatiquement pour les petits écrans */
+    margin: 0;
+    display: block; /* Changez la direction en block pour empiler les éléments */
+  
+    img {
+      width: 150px; /* Ajustez la taille de l'image pour les petits écrans */
+    }
+  
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem; /* Ajustez la taille de la police pour les petits écrans */
+      margin: 10px 0;
+    }
+  
+    .chiffre {
+      display: flex;
+      flex-direction: column; /* Ajustez la direction en colonne pour empiler les éléments */
+      align-items: center;
+      margin-top: 20px;
+  
+      .chiffre-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 0; /* Réinitialisez la marge gauche */
+        margin-right: 0; /* Réinitialisez la marge droite */
+  
+        .chiffre-content {
+          display: flex;
+          margin-bottom: 10px;
+          align-items: center;
+          font-size: 16px; /* Ajustez la taille de la police pour les petits écrans */
+  
+          img {
+            width: 30px; /* Ajustez la taille de l'image */
+            margin: 5px; /* Ajustez la marge */
+            margin-top: 0; /* Réinitialisez la marge supérieure */
+          }
+  
+          strong {
+            font-size: 40px; /* Ajustez la taille de la police pour les petits écrans */
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+  
+            + .description {
+              margin-top: 20px; /* Ajustez la marge comme nécessaire */
+            }
+          }
+  
+          .description {
+            font-size: 12px; /* Ajustez la taille de la police pour les petits écrans */
+            width: auto; /* Ajustez la largeur automatiquement */
+            color: white; /* Réinitialisez la couleur */
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+      }
+  
+      .chiffre-description {
+        margin-bottom: 20px;
+        font-size: 12px; /* Ajustez la taille de la police pour les petits écrans */
+        width: auto; /* Ajustez la largeur automatiquement */
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+}

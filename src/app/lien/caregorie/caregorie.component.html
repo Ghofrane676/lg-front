@@ -1,0 +1,14 @@
+<div class="menu">
+  <h2 class="titre-texte">ACTUALITÉS</h2>
+  <div class="contenu">
+    <div class="box" *ngFor="let item of menuItems" [ngClass]="{ 'active': item.isActive }">
+      <div class="text">
+        <h4>ACTUALITÉS {{ item.id }}</h4>
+        <p><span>POUR LIRE L'ARTICLE</span> {{ item.id }} <span>CLIQUEZ ICI</span></p>
+      </div>      
+      <div class="imbox">
+        <img [src]="item.imageSrc" alt="{{ item.title }}" (mouseover)="item.isActive = true" (mouseout)="item.isActive = false">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+<div class="page-container">
+
+  <div class="accueil">
+    <div class="animated-section">
+      <div class="a-propos-image">
+        <img src="/assets/template 2Asset 3mdpi.png" alt="Image de la société">
+      </div>
+      <h1 class="fly-in">VOTRE PARTENAIRE DE
+        CONFIANCE SUR
+        MESURE</h1>
+  </div>
+  </div>
+  <div class="menu">
+    <div class="contenu">
+      <div class="box" *ngFor="let item of menuItems; let i = index" [ngClass]="{ 'active': item.isActive }" (click)="toggleSection(i)">
+        <div class="imbox">
+          <img src="{{ item.iconName }}" alt="{{ item.Text }}">
+          <h3>{{ item.Text }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="section" *ngIf="menuItems[0].isActive">
+  <div class="paragraph">
+    <h2><img src="/assets/template 3Asset 9mdpi.png" alt="Icon">  Comptable Junior :</h2>
+    <p>
+      Le comptable junior, membre essentiel de votre équipe comptable, incarne la vitalité et le potentiel de notre entreprise. Doté d'une formation solide en comptabilité, il apporte une contribution précieuse en participant à la saisie des données comptables, aux rapprochements bancaires et à la préparation des déclarations fiscales de base. Rigoureux et soucieux du détail, il s'efforce de maintenir la précision et l'intégrité de nos données financières.
+    </p>
+  </div>
+
+  <div class="paragraph">
+    <h2><img src="/assets/template 3Asset 9mdpi.png" alt="Icon">  Comptable Sénior :</h2>
+    <p>
+      Le comptable senior incarne la quintessence de la fiabilité et de la compétence dans le domaine. Fort d'une expérience significative, il est capable de gérer des tâches comptables complexes, d'élaborer des rapports financiers détaillés, de résoudre des problèmes financiers délicats.
+    </p>
+  </div>
+
+  <div class="paragraph">
+    <h2><img src="/assets/template 3Asset 9mdpi.png" alt="Icon">  Comptable Réviseur Junior :</h2>
+    <p>
+      Le Comptable Réviseur Junior est fortement axé sur la qualité et la précision, ses tâches consistent à examiner et réviser des documents financiers. Doté d'une formation solide en comptabilité et d'une aptitude à détecter les erreurs et les incohérences, le Comptable Réviseur Junior joue un rôle crucial dans la garantie de la conformité aux normes comptables et la fiabilité des informations financières.
+    </p>
+  </div>
+
+  <div class="paragraph">
+    <h2><img src="/assets/template 3Asset 9mdpi.png" alt="Icon">  Comptable Réviseur Sénior :
+    </h2>
+    <p>
+      Le Comptable Réviseur Sénior, pilier de notre équipe comptable, incarne l'excellence et la profonde expertise dans le domaine de la comptabilité. Fort d'une expérience significative, il est le garant de l'intégrité des comptes de nos clients, veillant à la conformité aux normes comptables les plus rigoureuses. Son rôle ne se limite pas à la révision des chiffres, mais s'étend à la supervision des comptables juniors, à la résolution des défis complexes en matière fiscale et comptable.
+    </p>
+  </div>
+
+  <div class="paragraph">
+    <h2><img src="/assets/template 3Asset 9mdpi.png" alt="Icon">  Chef de mission :</h2>
+    <p>
+      Le chef de mission au sein de notre entreprise incarne l'expertise et la responsabilité. Fort de plusieurs années d'expérience dans le domaine de la comptabilité et de l'audit, il supervise les équipes, coordonne les missions d'audit et assure une communication transparente avec nos clients. Doté d'une compréhension pointue des normes comptables et des réglementations en vigueur, il garantit la qualité des travaux réalisés jusqu'au bilan et déclaration de l’IS. Il maintient un engagement constant envers l'intégrité, la précision et la conformité.
+    </p>
+  </div>
+</div>
+<div class="section2" *ngIf="menuItems[1].isActive">
+  <div class="paragraph">
+    <h2><img src="/assets/template 3Asset 9mdpi.png" alt="Icon">  INGÉNIEUR IT :</h2>
+    <p>
+      L'ingénieur IT est un expert en technologies de l'information essentiel au bon fonctionnement de votre entreprise. Doté de compétences techniques pointues, il est chargé de concevoir, mettre en œuvre et maintenir les infrastructures informatiques, de résoudre les problèmes techniques, d'assurer la sécurité des données, et de garantir la disponibilité des systèmes.    </p>
+  </div>
+
+  <div class="paragraph">
+    <h2><img src="/assets/template 3Asset 9mdpi.png" alt="Icon">  Support  Technique :</h2>
+    <p>
+      Le profil d'une personne en charge du support technique se caractérise par sa capacité à résoudre  efficacement  les  problèmes  techniques,  à  communiquer  de manière claire et compréhensible, et à offrir un service client exceptionnel. Dotée de solides compétences techniques, cette personne est également patiente, empathique et réactive, ce qui lui permet d'assister les utilisateurs dans la résolution de leurs problèmes informatiques, de répondre à leurs questions et de les guider dans l'utilisation des produits ou des services.    </p>
+  </div>
+
+  <div class="paragraph">
+    <h2><img src="/assets/template 3Asset 9mdpi.png" alt="Icon">  Génie  Civile :</h2>
+    <p>
+      Le profil d'un génie civil se caractérise par une expertise technique pointue dans la conception, la construction, et la gestion de projets d'infrastructures, allant des routes et ponts aux bâtiments et aux ouvrages hydrauliques. Les ingénieurs civils sont reconnus pour leur capacité à résoudre des problèmes complexes liés à la construction, à garantir la sécurité des structures et à superviser efficacement les chantiers. Ils sont également impliqués dans la planification, l'optimisation des ressources, la gestion de projets, et le respect des normes environnementales et de sécurité.    </p>
+  </div>
+</div>
+<app-containercontact></app-containercontact>
+
+</div>

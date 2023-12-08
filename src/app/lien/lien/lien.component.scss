@@ -1,0 +1,81 @@
+@media only screen and (min-width: 1200px){
+.a-propos {
+  background-color: #f0f0f0; /* Couleur de fond grise */
+  display: flex;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 100px 10px;
+  flex: 1;
+  margin-top: 200px;
+  width: 900px;
+}
+
+.a-propos .a-propos-image {
+  flex: 1;
+  padding: 10px;
+  display: left;
+  justify-content: flex-end;
+  margin-right: -70px; /* Ajustez la marge comme nécessaire pour l'écart entre le texte et l'image */
+
+  img {
+      width: 400px;
+      height: 320px;
+      box-shadow: 10px 0px 5px rgba(0, 0, 0, 0.2); /* Ajoutez ici votre ombre personnalisée */
+  }
+}
+
+.a-propos .a-propos-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+  padding: 10px;
+}
+
+.a-propos .a-propos-text h2 {
+  font-size: 65px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.884); /* Couleur du texte */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.a-propos .a-propos-text p {
+  text-align: justify;
+  max-width: 600px;
+  font-size: 17px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+  line-height: 2; /* Hauteur de ligne pour une meilleure lisibilité */
+  text-align: left; /* Justifier le texte à gauche */
+}
+}
+@media (max-width: 767px) {
+  .a-propos {
+    margin: 0;
+    width: auto;
+  }
+
+  .a-propos .a-propos-image {
+    margin-right: 20px;
+  }
+
+  /* Ajoutez des styles spécifiques pour les écrans plus petits si nécessaire */
+  .a-propos .a-propos-image img {
+    width: 100px; /* Par exemple, ajustez la taille de l'image */
+    height: 100px; /* Par exemple, ajustez la hauteur de l'image */
+  }
+
+  .a-propos .a-propos-text p {
+    font-size: 14px; /* Par exemple, ajustez la taille de la police du paragraphe */
+    text-transform: lowercase; /* Par exemple, appliquez la transformation de texte */
+  }
+}
+
+
+
+
+

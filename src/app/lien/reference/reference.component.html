@@ -1,0 +1,22 @@
+<div class="references-background">
+    <h2>NOS RÉFÉRENCES</h2>
+    <img src="/assets/template 7Asset 10mdpi.png" alt="template 7Asset 10mdpi.png">
+
+    <div class="references-container">
+      <div class="scroll-left" (click)="scroll(-1)">
+        <img src="/assets/template 1 Asset 42mdpi.png">
+      </div>
+      <div class="references-scroll" #scrollContainer>
+        <div class="reference-logo" *ngFor="let client of clients">
+          <img [src]="client.logo" alt="{{client.name}}" />
+        </div>
+      </div>
+      <div class="scroll-right" (click)="scroll(1)">
+        <img src="/assets/template 1 Asset 43mdpi.png">
+      </div>
+    </div>
+    <ul class="pagination">
+      <li *ngFor="let client of clients; let i = index" (click)="scrollToIndex(i)" [class.active]="i === activeClientIndex"></li>
+    </ul>
+  </div>
+  

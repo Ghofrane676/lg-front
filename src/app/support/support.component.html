@@ -1,0 +1,87 @@
+<div class="page-container">
+
+    <div class="a-propos">
+      <div class="section1">
+        <img src="/assets/template 2Asset 3mdpi.png" >
+  
+          <h2 class="fly-in">VOTRE PARTENAIRE DE CONFIANCE SUR MESURE</h2>
+          <h1 class="fly-in">SUPPORT AUX ENTREPRISES</h1>
+          <div class="menu" id="menu">
+            <div class="contenu">
+              <div class="box" *ngFor="let item of menuItems" [ngClass]="{ 'active': item.isActive }">
+                <div class="imbox" >
+                  <img src="{{ item.iconName }}" alt="{{ item.Text }}">
+                  <h3>{{ item.Text }}</h3>
+                </div>
+              </div>
+            </div>
+          </div> 
+      </div>
+  </div>
+  <div class="propos">
+    <h2>GESTION DE LA PAIE</h2>
+    
+    <div class="propos-text">
+      <p>
+Nous assurons la conformité aux réglementations en matière de paie et nous
+garantissons que les employés reçoivent leurs compensations à temps. Notre 
+service assure les taches suivantes : Collecte des Informations, Calcul des 
+Salaire, Gestion des Avantages Sociaux, Conformité Légale, Déclarations Social, 
+Édition des Bulletins de Paie, Gestion des Congés et Absences, Traitement des 
+Prêts et Avance, Archivage et Documentation.
+      </p>
+   <div class="propos-image">
+    <img src="/assets/Asset6.png"alt="Image de la société">
+    <h3>GESTION DE LA PAIE</h3>
+  
+  </div>
+  </div>
+  </div>
+  
+  <div class="propos2">
+    <h2>GESTION DES RESSOURCES HUMAINES</h2>
+    <div class="propos2-text">
+      <p>Nous couvrons l'ensemble du cycle de gestion du personnel, de l'aide au 
+        recrutement à la rédaction de contrats, la gestion des bulletins de paie et des 
+        déclarations sociales. De plus, nous vous apportons un soutien précieux lors des 
+        contrôles d'inspection de travail et de sécurité sociale, assurant ainsi la 
+        conformité aux réglementations et le bien-être de vos employés. </p>
+   <div class="propos2-image">
+    <img src="/assets/asset7.png"alt="Image de la société">
+    <h3>GESTION DES RESSOURCES HUMAINES</h3>
+  </div>
+  </div>
+  </div>
+  <div class="propos2">
+    <h2>SUPPORT ADMINISTRATIF</h2>
+    <div class="propos2-text">
+      <p>
+    Le service de support administratif inclut de multiples taches tel que la saisie de 
+documents, la rédaction de rapports, la gestion des boîtes mail, la facturation et 
+la relance client, il assure l'efficacité opérationnelle en veillant à 
+l'accomplissement rigoureux de ces tâches. Notre service joue un rôle 
+significatif dans la réussite de votre entreprise en simplifiant et en optimisant 
+ces processus clés. </p>
+   <div class="propos2-image">
+    <img src="/assets/asset4.png"alt="Image de la société">
+    <h3>SUPPORT ADMINISTRATIF</h3>
+  </div>
+  </div>
+  </div>
+  <div class="propos2">
+    <h2>SUPPORT INFORMATIQUE</h2>
+    <div class="propos2-text">
+      <p>
+Chargé de fournir une assistance technique et opérationnelle aux utilisateurs 
+internes en ce qui concerne les systèmes informatiques, les logiciels, le 
+matériel, et autres technologies liées, ce service joue un rôle clé dans le 
+maintien de la productivité et de la continuité des opérations. </p>
+   <div class="propos2-image">
+    <img src="/assets/asset3.png"alt="Image de la société">
+    <h3>SUPPORT INFORMATIQUE</h3>
+  </div>
+  </div>
+  </div>
+  <app-containercontact></app-containercontact>
+  
+      </div>

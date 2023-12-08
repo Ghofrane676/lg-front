@@ -1,0 +1,57 @@
+<div class="page-container">
+
+  <div class="a-propos">
+    <div class="section1">
+      <img src="/assets/template 2Asset 3mdpi.png">
+
+        <h2 class="fly-in">VOTRE PARTENAIRE DE CONFIANCE SUR MESURE</h2>
+        <h1 class="fly-in">NOS SERVICES</h1>
+        <div class="menu" id="menu">
+          <div class="contenu">
+            <div class="box" *ngFor="let item of menuItems" [ngClass]="{ 'active': item.isActive }">
+              <div class="imbox">
+                <img src="{{ item.iconName }}" alt="{{ item.Text }}">
+                <h3>{{ item.Text }}</h3> <!-- Afficher le texte en bas de l'image -->
+              </div>
+            </div>
+          </div>
+        </div> 
+    </div>
+</div>
+<div class="propos">
+  <h2>SUPPORT ADMINISTRATIF</h2>
+  <img class="Image" src="/assets/template 7Asset 10mdpi.png">
+  <div class="propos-text">
+    <p>LE SERVICE DE SUPPORT ADMINISTRATIF CHEZ LG GROUP JOUE UN RÔLE CENTRAL DANS L'ORGANISATION DES TÂCHES
+      ADMINISTRATIVES ESSENTIELLES.
+      CELA INCLUT LA SAISIE DE DOCUMENTS, LA RÉDACTION DE RAPPORTS, LA GESTION DES BOÎTES MAIL, LA FACTURATION, ET
+      LA RELANCE CLIENT. IL GARANTIT L'EFFICACITÉ OPÉRATIONNELLE EN VEILLANT À L'ACCOMPLISSEMENT RIGOUREUX DE CES
+      TÂCHES, CONTRIBUANT AINSI DE MANIÈRE SIGNIFICATIVE À LA RÉUSSITE DE L'ENTREPRISE.</p>
+ <div class="propos-image">
+  <img src="/assets/template 2Asset 9mdpi.png"alt="Image de la société">
+  <h3>SUPPORT ADMINISTRATIF</h3>
+
+</div>
+</div>
+</div>
+
+<div class="propos2">
+  <h2>GESTION DES RESSOURCES HUMAINES</h2>
+  <img class="Image" src="/assets/template 7Asset 10mdpi.png">
+  <div class="propos2-text">
+    <p>LE SERVICE GESTION DES RESSOURCES HUMAINES POUR LG GROUP OFFRE UN SOUTIEN COMPLET EN MATIÈRE DE
+      PERSONNEL.
+      DE L'AIDE AU RECRUTEMENT À L'ÉLABORATION DE CONTRATS DE TRAVAIL, EN PASSANT PAR L'ÉTABLISSEMENT DES
+      BULLETINS DE PAIE ET DES DÉCLARATIONS SOCIALES, CE SERVICE EST UN PILIER ESSENTIEL POUR LA GESTION DES
+      RESSOURCES HUMAINES AU SEIN DE L'ENTREPRISE.
+      DE PLUS, IL ASSURE UNE ASSISTANCE PRÉCIEUSE LORS DE CONTRÔLES D'INSPECTION DE TRAVAIL OU DE SÉCURIT
+      SOCIALE, GARANTISSANT AINSI LA CONFORMITÉ AUX RÉGLEMENTATIONS ET LE BIEN-ÊTRE DES EMPLOYÉS.</p>
+ <div class="propos2-image">
+  <img src="/assets/template 2Asset 6mdpi.png"alt="Image de la société">
+  <h3>GESTION DES RESSOURCES HUMAINES</h3>
+</div>
+</div>
+</div>
+<app-containercontact></app-containercontact>
+
+    </div>
